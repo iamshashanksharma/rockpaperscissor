@@ -4,21 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <h1>Rock Paper Scissor </h1>
-   <div>Player Score</div>
-   <div id="pscore">0</div>
-   <div>Computer Score</div>
-   <div id="cscore">0</div>
-   <div>Choose your move </div>
-   <div>Moves left : <span id="moves">10</span></div>
-   <button onclick="gameLogic('Rock')">Rock </button>
-   <button onclick="gameLogic('Paper')">Paper</button>
-   <button onclick="gameLogic('Scissor')">Scissor</button>
-   <div id="result">Winner : </div>
-   <button onclick="reset()">Reset</button>
+  <div class="game">
+    <h1>Rock Paper Scissor </h1>
+   
+    <div class="score">
+      <div class="player-score">
+        <div>Player Score</div>
+        <div id="pscore">0</div>
+      </div>
+      <div class="computer-score">
+        <div>Computer Score</div>
+        <div id="cscore">0</div>
+      </div>
+    </div>
+    <div class="move-choice">Choose your move </div>
+    <div>Moves left : <span id="moves">10</span></div>
+    <div class="response">
+     <button class="rock-button" onclick="gameLogic('Rock')">Rock </button>
+     <button class="paper-button" onclick="gameLogic('Paper')" >Paper</button>
+     <button class="scissor-button" onclick="gameLogic('Scissor')">Scissor</button>
+    </div>
+    <div id="result">Winner : </div>
+    <button class="result" onclick="reset()">Reset</button>
+
+  </div>
+   
+   
    
   
   <script src="script.js"></script> 
+  </body>
 </html>

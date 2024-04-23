@@ -1,0 +1,44 @@
+body{
+    background-color: brown;
+    color: white;
+}
+
+.game{
+    display:flex;
+    flex-direction: column;
+    justify-content : center;
+    align-items : center;
+    height:500px;
+}
+.score{
+    display:flex;
+    
+}
+.player-score{
+    padding:10px;
+    margin-right:30px;
+    text-align: center;
+}
+
+.computer-score{
+    padding:10px;
+    text-align: center;
+}
+
+.rock-button{
+    margin-right: 30px;
+   
+}
+.paper-button{
+    margin-right: 30px;
+}
+.response{
+    margin-top : 30px;
+    margin-bottom : 30px;
+}
+.move-choice{
+    margin-top:25px;
+}
+.result{
+    margin-top:10px;
+}
